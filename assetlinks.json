@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "space.truthbtold.twa",
+      "sha256_cert_fingerprints": [
+        "90:B7:87:AC:DC:91:DE:BC:52:08:26:2C:75:CF:F3:4E:FB:20:78:C9:14:AA:BE:91:56:0C:32:FB:C9:1F:BD:E6"
+      ]
+    }
+  }
+]
