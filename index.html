@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=https://www.truthbtold.space">
-    <title>Redirecting...</title>
+    <meta charset="UTF-8" />
+    <title>Truth Be Told</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        text-align: center;
+        margin-top: 20%;
+        opacity: 0;
+        transition: opacity 2s ease-in;
+      }
+      .brand {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .fallback {
+        margin-top: 30px;
+        display: none;
+      }
+      .fallback a {
+        background-color: #0078D4;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+      .fallback a:hover {
+        background-color: #005ea2;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        document.body.style.opacity = 1;
+
+        setTimeout(function () {
+          window.location.href = "https://www.truthbtold.space";
+        }, 4000);
+
+        setTimeout(function () {
+          document.querySelector(".fallback").style.display = "block";
+        }, 4500);
+      };
+    </script>
   </head>
   <body>
-    <p>If you’re not redirected, <a href="https://www.truthbtold.space">click here</a>.</p>
+    <div class="brand">Launching truthbtold.space...</div>
+    <div class="fallback">
+      <a href="https://www.truthbtold.space">truthbtold.space</a>
+    </div>
   </body>
 </html>
