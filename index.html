@@ -41,10 +41,12 @@
       window.onload = function () {
         document.body.style.opacity = 1;
 
+        // Attempt redirect
         setTimeout(function () {
-          window.location.replace = "https://www.truthbtold.space";
+          window.location.replace("https://www.truthbtold.space");
         }, 4000);
 
+        // Show fallback button if redirect fails
         setTimeout(function () {
           document.querySelector(".fallback").style.display = "block";
         }, 4500);
